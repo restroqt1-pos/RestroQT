@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RestroQT — Hospitality Operating System</title>
+  <meta name="description" content="RestroQT is a real-time hospitality operating system for hotels, resorts, restaurants, and cafés. One dashboard to run your entire property." />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #0a0a0f;
+      color: #e4e4e7;
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px;
+      background: radial-gradient(ellipse at 50% 0%, #1a1a2e 0%, #0a0a0f 70%);
+    }
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, #f59e0b, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
+    }
+    .hero p {
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      color: #a1a1aa;
+      max-width: 640px;
+      margin: 20px 0 40px;
+    }
+    .hero .tagline {
+      font-size: 0.9rem;
+      color: #71717a;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 16px;
+    }
+    .btn-group { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+    .btn {
+      display: inline-block;
+      padding: 14px 36px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #f59e0b, #ef4444);
+      color: #fff;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(239, 68, 68, 0.3); }
+    .btn-outline {
+      border: 1px solid #27272a;
+      color: #e4e4e7;
+    }
+    .btn-outline:hover { background: #18181b; border-color: #3f3f46; }
+
+    /* Hero Screenshot */
+    .hero-screenshot {
+      margin-top: 60px;
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 12px;
+      border: 1px solid #27272a;
+      box-shadow: 0 20px 80px rgba(0,0,0,0.5);
+    }
+
+    /* Sections */
+    section { padding: 100px 0; }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .section-sub {
+      text-align: center;
+      color: #a1a1aa;
+      max-width: 560px;
+      margin: 0 auto 60px;
+    }
+
+    /* Feature Grid */
+    .grid-2, .grid-3 {
+      display: grid;
+      gap: 32px;
+    }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+    .feature-card {
+      background: #121216;
+      border: 1px solid #27272a;
+      border-radius: 12px;
+      padding: 32px;
+      transition: border-color 0.2s;
+    }
+    .feature-card:hover { border-color: #3f3f46; }
+    .feature-card h3 { font-size: 1.2rem; margin-bottom: 12px; }
+    .feature-card p { color: #a1a1aa; font-size: 0.95rem; }
+    .feature-card .icon { font-size: 2rem; margin-bottom: 16px; display: block; }
+
+    .feature-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 16px;
+      border: 1px solid #1f1f23;
+    }
+
+    .inline-imgs {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .inline-imgs img {
+      width: calc(50% - 8px);
+      border-radius: 8px;
+      border: 1px solid #1f1f23;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 60px 24px;
+      border-top: 1px solid #27272a;
+      color: #71717a;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .inline-imgs { flex-direction: column; }
+      .inline-imgs img { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="tagline">Real-Time Hospitality Operating System</div>
+  <h1>RestroQT</h1>
+  <p>One dashboard to run your entire hotel or restaurant — rooms, orders, kitchen, billing, cash, and guests. Everything connected. Everything live.</p>
+  <div class="btn-group">
+    <a href="#screenshots" class="btn btn-primary">See Product</a>
+    <a href="#contact" class="btn btn-outline">Request Demo →</a>
+  </div>
+  <img src="assets/screenshots/hero-dashboard.jpg" alt="RestroQT Dashboard" class="hero-screenshot" />
+</section>
+
+<div class="container">
+
+<section id="features">
+  <h2 class="section-title">Everything You Need</h2>
+  <p class="section-sub">From front desk to kitchen to accounts — one unified platform replaces paper, disconnected tools, and manual workflows.</p>
+  <div class="grid-3">
+    <div class="feature-card"><span class="icon">🖥️</span><h3>Live Dashboard</h3><p>Room grid, guest tracking, live orders, and walk-in alerts — all auto-refreshing.</p></div>
+    <div class="feature-card"><span class="icon">🍽️</span><h3>Order Management</h3><p>Quick Ticket ordering, KOT generation, full lifecycle, cancellations, and modifications.</p></div>
+    <div class="feature-card"><span class="icon">👨‍🍳</span><h3>Kitchen Display</h3><p>Real-time order feed, color-coded statuses, sound alerts, one-tap updates.</p></div>
+    <div class="feature-card"><span class="icon">🧾</span><h3>Smart Billing</h3><p>GST/Non-GST, PDF invoices, discounts, email delivery, bill history.</p></div>
+    <div class="feature-card"><span class="icon">💰</span><h3>Cash Management</h3><p>Shift tracking, cash in/out, tamper-proof ledger, staff accountability.</p></div>
+    <div class="feature-card"><span class="icon">📊</span><h3>Analytics</h3><p>Revenue tracking, order insights, occupancy, cash flow, CSV export.</p></div>
+  </div>
+</section>
+
+<section id="screenshots">
+  <h2 class="section-title">Product Screenshots</h2>
+  <p class="section-sub">See RestroQT in action across every module.</p>
+
+  <div class="grid-2">
+    <div class="feature-card">
+      <h3>🖥️ Dashboard</h3>
+      <p>Room occupancy grid with live order monitoring.</p>
+      <img src="assets/screenshots/hero-dashboard.jpg" alt="Dashboard" />
+    </div>
+    <div class="feature-card">
+      <h3>🍽️ Orders</h3>
+      <p>Quick Ticket ordering and order lifecycle management.</p>
+      <img src="assets/screenshots/hero-orders.jpg" alt="Orders" />
+    </div>
+    <div class="feature-card">
+      <h3>🧾 Billing</h3>
+      <p>GST invoice generation with discount support.</p>
+      <img src="assets/screenshots/hero-billing.jpg" alt="Billing" />
+    </div>
+    <div class="feature-card">
+      <h3>📊 Analytics</h3>
+      <p>Revenue tracking and operational insights.</p>
+      <img src="assets/screenshots/hero-analytics.jpg" alt="Analytics" />
+    </div>
+  </div>
+
+  <div class="feature-card" style="margin-top: 32px;">
+    <h3>👨‍🍳 Kitchen Display System</h3>
+    <p>Real-time order feed, color-coded statuses, and one-tap updates.</p>
+    <div class="inline-imgs">
+      <img src="assets/screenshots/kitchen-orders.png" alt="Kitchen Orders" />
+      <img src="assets/screenshots/kitchen-detail.png" alt="Kitchen Detail" />
+    </div>
+    <img src="assets/screenshots/kitchen-overview.png" alt="Kitchen Overview" style="margin-top: 16px;" />
+  </div>
+
+  <div class="grid-2" style="margin-top: 32px;">
+    <div class="feature-card">
+      <h3>🖥️ Reception Dashboard</h3>
+      <p>Front desk control center for check-ins, orders, and billing.</p>
+      <img src="assets/screenshots/reception-dashboard.jpg" alt="Reception Dashboard" />
+    </div>
+    <div class="feature-card">
+      <h3>🏨 Guest Check-in</h3>
+      <p>Quick guest registration and room assignment.</p>
+      <img src="assets/screenshots/reception-checkin.jpg" alt="Guest Check-in" />
+    </div>
+    <div class="feature-card">
+      <h3>👤 Guest Management</h3>
+      <p>View guest details, order history, and outstanding balance.</p>
+      <img src="assets/screenshots/reception-guest.jpg" alt="Guest Management" />
+    </div>
+    <div class="feature-card">
+      <h3>📋 Food Menu</h3>
+      <p>Multi-language menu with quick-add to order.</p>
+      <img src="assets/screenshots/reception-menu.jpg" alt="Food Menu" />
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <p class="section-sub">Want a live demo? We'd love to show you what RestroQT can do for your property.</p>
+  <div style="text-align: center;">
+    <a href="#" class="btn btn-primary">Request Demo</a>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <p>RestroQT — The Operating System for Modern Hotels & Restaurants</p>
+  <p style="margin-top: 8px;">Made with ❤️ for hospitality</p>
+</footer>
+
+</body>
+</html>

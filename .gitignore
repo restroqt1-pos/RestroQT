@@ -1,0 +1,26 @@
+# ==============================
+#   RestroQT - Repository Scope
+# ==============================
+#
+# This repo is a PUBLIC marketing site.
+# Source code is NOT included.
+# Only static assets and docs are tracked.
+
+# Raw screenshot originals (use assets/screenshots/ instead)
+servs/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temp files
+*.log
+*.tmp
