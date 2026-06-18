@@ -2,20 +2,23 @@
 
 # 🍽️ RestroQT
 
-**The Operating System for Modern Hotels & Restaurants**
+**Replace memory, paper, and WhatsApp with one real-time operating system for your entire property.**
+
+🌐 [restroqt.com](https://restroqt.com)
 
 <br>
 
 [![Status](https://img.shields.io/badge/status-active-brightgreen)]()
 [![Platform](https://img.shields.io/badge/platform-Web%20%7C%20Mobile-blue)]()
 [![License](https://img.shields.io/badge/license-Proprietary-purple)]()
-[![Demo](https://img.shields.io/badge/demo-request-ff6b6b)]()
+[![Demo](https://img.shields.io/badge/demo-request-ff6b6b)](https://restroqt.com/contact)
 
 <br>
 
 <img src="assets/screenshots/hero-dashboard.jpg" alt="RestroQT Dashboard" width="90%" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
 
-*Your entire property at a glance — live room grid, active guests, and order statuses.*
+Trusted for real-time operations in modern hotels, restaurants, and cloud kitchens.  
+Visit → **[restroqt.com](https://restroqt.com)**
 
 </div>
 
@@ -23,7 +26,8 @@
 
 ## 🚀 What is RestroQT?
 
-RestroQT is a **real-time hospitality operating system** that connects every part of your hotel or restaurant into one live dashboard — rooms, orders, kitchen, billing, cash, and guests.
+RestroQT is a **real-time hospitality operating system** that connects every part of your hotel or restaurant into one live dashboard — rooms, orders, kitchen, billing, cash, and guests.  
+Learn more at **[restroqt.com](https://restroqt.com)**.
 
 ```
 Guest orders food
@@ -38,6 +42,44 @@ Bill generated → Cash received → Ledger updated
 ```
 
 > **Everything live. Everything synced. One system.**
+
+---
+
+## 💰 What RestroQT Improves
+
+- Faster table turnover → more daily revenue
+- Reduced billing errors → less leakage
+- Real-time order flow → faster service
+- Better staff accountability → lower losses
+- Zero missed orders → higher customer satisfaction
+
+> Even a small hotel saves hours of manual coordination every day.
+
+---
+
+## 📱 Guests Don't Wait Anymore
+
+Your guests can:
+- Scan a QR code
+- Browse the menu on their phone
+- Order instantly
+- Track their order live
+- Pay without calling reception
+
+> No waiting. No calling. No confusion.
+
+---
+
+## ⚡ Why RestroQT Is Different
+
+Most POS systems:
+- Are fragmented tools stitched together
+- Require manual syncing
+- Focus only on billing
+
+RestroQT is different:
+
+> It is a real-time operating system for the entire property.
 
 ---
 
@@ -202,15 +244,20 @@ Status Update → MQTT Message → Dashboard + Guest (0.5s)
 
 ---
 
-## 📞 Get In Touch
+RestroQT turns your hotel into a real-time system where nothing is delayed, lost, or missed.
 
-> Want a live demo? We'd love to show you what RestroQT can do.
+---
 
-| Method | Details |
-|--------|---------|
-| 🐛 **GitHub Issues** | Open an issue for questions or feature requests |
-| 📧 **Email** | *(add your email here)* |
-| 💬 **WhatsApp** | *(add your WhatsApp link here)* |
+## 🚀 See RestroQT in Action
+
+We can show your entire hotel workflow live:
+
+**Check-in → Order → Kitchen → Billing → Payment**
+
+in under 2 minutes.
+
+👉 [Request a live demo](https://restroqt.com/contact)  
+👉 Or start a conversation via [GitHub Issues](https://github.com/restroqt1-pos/RestroQT/issues)
 
 ---
 
@@ -224,6 +271,11 @@ Status Update → MQTT Message → Dashboard + Guest (0.5s)
 
 <br>
 
-**Made with ❤️ for hotels and restaurants everywhere**
+If you like the project, please **star the repository** — it helps us grow.
+
+<br>
+
+**Made with ❤️ for hotels and restaurants everywhere**  
+[restroqt.com](https://restroqt.com)
 
 </div>
